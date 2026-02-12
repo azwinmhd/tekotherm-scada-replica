@@ -1,6 +1,6 @@
-# Teknotherm SCADA Challenge – Water System Replica
+Teknotherm SCADA Challenge – Water System Replica
 
-#Name: AZWIN MUHAMMED KK 
+Name: AZWIN MUHAMMED KK 
 
 ## Live Demo
 🔗 **Visit the live site:**  
