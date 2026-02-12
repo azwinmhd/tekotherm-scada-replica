@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Ensure the outer container adapts */
+.openbridge-panel {
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;  /* if content overflows, show scrollbar */
+  padding: 28px 32px;
+}
+
+.scada-grid {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  gap: 20px;
+  position: relative;
+  /* force minimum width so it doesn't shrink on small screens */
+  min-width: calc(240px * 4 + 20px * 3 + 64px);
+}
+
+/* SVG overlay should be contained within the diagram-layer */
+.diagram-layer {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+}

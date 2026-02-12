@@ -1,0 +1,221 @@
+/* ---------- GLOBAL / RESET ---------- */
+body {
+  margin: 0;
+  padding: 20px;
+  background: #0a1a26;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: auto;
+  min-width: fit-content;
+}
+
+/* ---------- MAIN PANEL ---------- */
+.openbridge-panel {
+  background: #0e1e2c;
+  border-radius: 28px;
+  box-shadow: 0 20px 30px -8px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,255,255,0.15);
+  padding: 28px 32px;
+  max-width: 100%;
+  width: fit-content;
+  border: 1px solid #1e5a68;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+/* ---------- HEADER ---------- */
+.challenge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #23616e;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+}
+
+.challenge-header h1 {
+  color: #b3f0f5;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.challenge-header h1 i {
+  color: #50e0e0;
+}
+
+.challenge-badge {
+  background: #153d47;
+  padding: 8px 20px;
+  border-radius: 40px;
+  color: #ccfaff;
+  border: 1px solid #38b2b9;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-figma {
+  background: #0f505c;
+  padding: 4px 12px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+/* ---------- DIAGRAM LAYER ---------- */
+.diagram-layer {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* ---------- GRID – 4 COLUMNS, FIXED WIDTH, SCROLLABLE ---------- */
+.scada-grid {
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px;
+  gap: 20px;
+  position: relative;
+  min-width: calc(240px * 4 + 20px * 3);
+}
+
+.grid-item {
+  display: flex;
+}
+
+/* ---------- CARD – OPENBRIDGE DESIGN TOKENS ---------- */
+.ob-card {
+  background: #0f2832;
+  border-radius: 16px;
+  border: 1px solid #1d7a85;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 0 #0a1a1f;
+  width: 100%;
+}
+
+.ob-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.ob-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #c0f7ff;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  max-width: 160px;
+}
+
+.ob-icon {
+  background: #0e404b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6af2f2;
+  font-size: 22px;
+  border: 1px solid #3acbd6;
+}
+
+.main-digital {
+  font-size: 34px;
+  font-weight: 700;
+  color: #eaffff;
+  line-height: 1;
+  margin: 6px 0 8px;
+  text-shadow: 0 0 10px rgba(0, 230, 230, 0.3);
+}
+
+.main-digital span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9ee2e8;
+  margin-left: 4px;
+}
+
+.param-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2027;
+  border-radius: 40px;
+  padding: 6px 12px;
+  margin-top: 6px;
+  border: 1px solid #256870;
+}
+
+.param-label {
+  color: #b1f0f5;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  gap: 6px;
+}
+
+.param-value {
+  background: #0e303a;
+  padding: 2px 14px;
+  border-radius: 40px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 15px;
+  border: 0.5px solid #2e9aa8;
+}
+
+.card-footer {
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c1f7fa;
+  background: #0f3a44;
+  padding: 6px 12px;
+  border-radius: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px dashed #3bb3c0;
+}
+
+.setpoints-card,
+.operations-card {
+  background: #0d3740;
+}
+
+/* ---------- SVG PIPE OVERLAY ---------- */
+.svg-pipes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ---------- FOOTER NOTE ---------- */
+.replica-note {
+  margin-top: 32px;
+  color: #71c4cc;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #21606b;
+  padding-top: 18px;
+}
+
+.vite-badge {
+  margin-left: 18px;
+  background: #0f454f;
+  padding: 4px 16px;
+  border-radius: 30px;
+}

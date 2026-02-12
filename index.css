@@ -1,0 +1,18 @@
+/* Import the industrial colors */
+@import "@oicl/openbridge-webcomponents/src/palettes/variables.css";
+
+:root {
+  background-color: var(--obc-main-background-color);
+  color: var(--obc-element-neutral-content-color);
+}
+
+body {
+  overflow-x: auto;
+  margin: 0;
+  padding: 20px;
+  background: #0a1a26;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: fit-content;
+}
