@@ -40,3 +40,7 @@ High-visibility Sensor Tags
 
 ## GitHub Repository
 https://github.com/azwinmhd/tekotherm-scada-replica
+## Resume
+[AZWIN RESUME (2).pdf](https://github.com/user-attachments/files/25281553/AZWIN.RESUME.2.pdf)
+
+
